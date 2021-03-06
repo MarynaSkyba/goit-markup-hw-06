@@ -425,7 +425,6 @@
 
 .modal-form {
     width: 448px;
-    /* padding: 40px; */
 
     margin: 40px;
 
@@ -438,6 +437,7 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
 
     border-radius: 4px;
+    outline: none;
    
 }
 
@@ -483,15 +483,17 @@ textarea {
     
 }
 
-.form-field input {
+.form-field .form-input {
     position: relative;
     margin: 0;
     padding: 11px;
-    border: none;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
 
     border-radius: 4px;
+    outline: none;
+   
 }
 
 .form-field .form-label {
@@ -523,6 +525,10 @@ textarea {
 
 }
 
+textarea:focus-within {
+    border-color: var(--accent-color);
+}
+
 .form-field .svg-icon {
     position: absolute;
     top: 50%;
@@ -530,20 +536,16 @@ textarea {
     transform: translateY(-50%);
 }
 
-/* .form-input:focus ~ .svg-icon {
-    fill: var(--accent-color);
-     */
-
-
-.form-field:focus-within {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+.form-input:focus ~ .svg-icon {
+    fill: var(--accent-color);   
 }
 
-/* .form-field:focus-within {
-    border: 1px solid var(--accent-color);
+.form-input:focus-within {
+    border-color: var(--accent-color);
     border-radius: 4px;
-} */
+    
+}
+
 
 .conditions {
     color: var(--accent-color);
