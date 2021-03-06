@@ -468,6 +468,8 @@ textarea {
     border-radius: 4px;   
     border: none;
 
+    transition: background-color 250ms var(--timing-fn);
+
 }
 
 .button-send:hover,
@@ -494,6 +496,7 @@ textarea {
     border-radius: 4px;
     outline: none;
    
+    transition: border-color 250ms var(--timing-fn);
 }
 
 .form-field .form-label {
@@ -523,6 +526,8 @@ textarea {
 
     color: rgba(117, 117, 117, 0.5);
 
+    transition: border-color 250ms var(--timing-fn);
+
 }
 
 textarea:focus-within {
@@ -534,6 +539,8 @@ textarea:focus-within {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+
+    transition: fill 250ms var(--timing-fn);
 }
 
 .form-input:focus ~ .svg-icon {
@@ -586,6 +593,8 @@ textarea:focus-within {
     background-image: url(../images/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
+
+    transition: all 250ms var(--timing-fn);
 }
 
 .checkbox {
